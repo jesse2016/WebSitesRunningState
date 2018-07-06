@@ -1,0 +1,39 @@
+/* css init */
+* {padding:0;margin:0;}
+body {font-family:"pingfang sc","Calibri","microsoft Yahei UI","Lucida Grande", "Lucida Sans Unicode", Helvetica,Verdana, sans-serif;font-size:16px;}
+h1,h2,h3,h4,h5,h6 {font-weight:normal;font-size:16px;}
+li,dd,dt,ul,dl,ol {list-style:none;padding:0;margin:0;}
+em,address,i {font-style:normal;}
+u {text-decoration:none;}
+label {cursor:pointer;}
+input {vertical-align:middle;font-family:Calibri,Verdana;}
+img {border:0;vertical-align:middle;height:auto;}
+hr {height:0;display:block;border:0;border-top:1px solid #e8e9ed;margin:0;}
+a {text-decoration:none;color:#24b367;}
+a:hover {text-decoration:none;color:#333339;}
+.gap16 {height:16px;line-height:0;font-size:0;overflow:hidden;}
+.gap32 {height:32px;line-height:0;font-size:0;overflow:hidden;}
+.clear {clear:both;height:0;font-size:0;overflow:hidden;display:block;}
+.red {color:#e6312e;}
+.madder {color:#e55c67;}
+.blue {color:#09F;}
+.green {color:#096;}
+.cyan {color:#24b3b3;}
+.orange {color:#F60}
+.gray {color:#b6b6bf;}
+.font16 {font-size:16px;}
+.font24 {font-size:24px;}
+pre {line-height:1.8rem;}
+
+/* css article */
+body {font-size:4.25vmin;}
+.heading {font-size:6vmin;padding:5vmin;text-align:center;line-height:1;}
+.heading span {display:block;line-height:1.5;}
+.heading i {display:inline-block;color:#999;font-size:3vmin;margin:0 2.5vmin;}
+
+.contentBox div,
+.contentBox p {margin:5vmin;line-height:1.8;font-size:4.25vmin;word-wrap:break-word;word-break:break-all;text-align:justify;display:block;}
+.contentBox video {width:100%;background:#efefef;margin:4vmin 0;}
+.contentBox img {width:100%;margin:4vmin 0;}
+.contentBox br {display:block;}
+.foot {text-align:center;font-size:3vmin;color:#999;padding:3vmin 0;border-top:1px solid #eee;}

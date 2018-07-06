@@ -1,0 +1,6 @@
+packages
+obj
+bin
+Update
+*.suo
+*.vs

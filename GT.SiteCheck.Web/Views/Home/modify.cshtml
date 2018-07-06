@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="~/Content/css/render.css">
+    <script src="~/Content/js/warning.js" type="text/javascript" language="javascript"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/common.js"></script>
+    <script src="~/Scripts/layer.js"></script>
+    <script src="~/Scripts/modify.js"></script>
+    <title>修改</title>
+</head>
+
+<body>
+    <div class="boxin">
+        @*<h2 class="heading"><span>修改</span></h2>
+        <hr>*@
+        <div class="toolsBox">
+            <ul class="tools">
+                <li><p class="check"><label for="checkAll"><input type="checkbox" id="checkAll"> <i>全选</i></label></p></li>
+                <li><p id="addition"><i>增加服务器</i></p></li>
+                <li><p id="modify"><i>修改所选</i></p></li>
+                <li><p id="closeServer"><i>关闭所选</i></p></li>
+                <li><p id="openServer"><i>开启所选</i></p></li>
+                <li><p id="openJobPanel"><i>JOB管理</i></p></li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <ul class="modifyList" id="modifyList"></ul>
+        </div>
+        <div class="pagenumBox" id="pagenumBox">
+        </div>
+        <hr>
+        @*<div class="btnBox">
+            <a id="submit" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">Button</a>
+        </div>*@
+    </div>
+
+    <section class="warningBox off" id="warningBox01">
+        <div class="warningBoxIn">
+            <div class="box">
+                <h2 class="heading"><span>增加服务器</span><em><i id="Close01" class="Delete">关闭</i></em></h2>
+                <hr>
+                <ul class="infoList">
+                    <li><span><i>服务器名称</i></span><p><input type="text" id="name" /></p></li>
+                    <li><span><i>描述信息</i></span><p><input type="text" id="desc" /></p></li>
+                    <li>
+                        <span><i>URL类型</i></span>
+                        <p>
+                            <select id="type">
+                                <option value="1" selected="selected">RESTFUL</option>
+                                <option value="2">WebService</option>
+                            </select>
+                        </p>
+                    </li>
+                    <li><span><i>检测URL</i></span><p><input type="text" id="url" value="http://" /></p></li>
+                    <li><span><i>URL参数</i></span><p><input type="text" id="paras" /></p></li>
+                    <li><span><i>通知邮箱</i></span><p><input type="text" id="mails" /></p></li>
+                    <li><span><i>轮询间隔(S)</i></span><p><input type="text" id="interval" value="1800" /></p></li>
+                    <li><span><i>是否启用</i></span>
+                        <p>
+                        <select name="isuse" id="isuse">
+                            <option value="1" selected="selected">启用</option>
+                            <option value="0">关闭</option>
+                        </select>   
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <div class="btnBox">
+                    <a id="Submit01" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">放弃</a>
+                    <a id="Submit011" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">确定</a>
+                </div>
+                <div class="gap16"></div>
+            </div>
+        </div>
+    </section>
+    <section class="warningBox off" id="warningBox02">
+        <div class="warningBoxIn">
+            <div class="box">
+                <h2 class="heading"><span>关闭所选</span><em><i id="Close02" class="Delete">关闭</i></em></h2>
+                <hr>
+                <div class="note">
+                    <p>警示!</p>
+                    <i>确定要关闭选择的服务器吗？</i>
+                </div>
+                <div class="btnBox">
+                    <a id="Submit02" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">放弃</a>
+                    <a id="Submit022" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">确定</a>
+                </div>
+                <div class="gap16"></div>
+            </div>
+        </div>
+    </section>
+    <section class="warningBox off" id="warningBox04">
+        <div class="warningBoxIn">
+            <div class="box">
+                <h2 class="heading"><span>开启所选</span><em><i id="Close04" class="Delete">关闭</i></em></h2>
+                <hr />
+                <div class="note">
+                    <p>警示!</p>
+                    <i>确定要开启选择的服务器吗？</i>
+                </div>
+                <div class="btnBox">
+                    <a id="Submit04" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">放弃</a>
+                    <a id="Submit044" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">确定</a>
+                </div>
+                <div class="gap16"></div>
+            </div>
+        </div>
+    </section>
+    <section class="warningBox off" id="warningBox03">
+        <div class="warningBoxIn">
+            <div class="box">
+                <h2 class="heading"><span>修改所选</span><em><i id="Close03" class="Delete">关闭</i></em></h2>
+                <hr>
+                <input type="hidden" id="u_id" />
+                <ul class="infoList">
+                    <li><span><i>服务器名称</i></span><p><input type="text" id="u_name" /></p></li>
+                    <li><span><i>描述信息</i></span><p><input type="text" id="u_desc" /></p></li>
+                    <li>
+                        <span><i>URL类型</i></span>
+                        <p>
+                            <select id="u_type">
+                                <option value="1">RESTFUL</option>
+                                <option value="2">WebService</option>
+                            </select>
+                        </p>
+                    </li>
+                    <li><span><i>检测URL</i></span><p><input type="text" id="u_url" /></p></li>
+                    <li><span><i>URL参数</i></span><p><input type="text" id="u_paras" /></p></li>
+                    <li><span><i>通知邮箱</i></span><p><input type="text" id="u_mails" /></p></li>
+                    <li><span><i>轮询间隔(S)</i></span><p><input type="text" id="u_interval" /></p></li>
+                    <li>
+                        <span><i>是否启用</i></span>
+                        <p>
+                            <select id="u_isuse">
+                                <option value="1">启用</option>
+                                <option value="0">关闭</option>
+                            </select>
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <div class="btnBox">
+                    <a id="Submit03" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">放弃</a>
+                    <a id="Submit033" href="javascript:void(0);" class="btnType_capsule btnType_M btnLooks_solid">确定</a>
+                </div>
+                <div class="gap16"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

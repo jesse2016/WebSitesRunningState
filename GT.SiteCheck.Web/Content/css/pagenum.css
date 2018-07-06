@@ -1,0 +1,10 @@
+/* CSS Document */
+.pagenum {display:flex;justify-content:center;}
+.pagenum ul {display:flex;text-align:center;}
+.pagenum li {display:flex;}
+.pagenum p {background:#fff;border:1px solid #bbb;line-height:1;padding:.3rem .7rem;margin:.2rem;border-radius:10rem;cursor:pointer;font-size:.75rem;vertical-align:middle;}
+.pagenum p:hover {background:#2883e9;border-color:#2883e9;color:#fff;}
+.pagenum .unavailable p {color:#c8c9cc;border:0;background:none;cursor:default;padding:.3rem;}
+.pagenum .unavailable p:hover {color:#ccc;}
+.pagenum .prev p:before {content:"\e929";vertical-align:middle;font-size:.5rem;padding-right:.2rem;}
+.pagenum .next p:after {content:"\e92a";vertical-align:middle;font-size:.5rem;padding-left:.2rem;}

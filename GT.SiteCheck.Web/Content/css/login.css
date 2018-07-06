@@ -1,0 +1,76 @@
+/* CSS Document */
+@import url(init.css);
+@import url(font.css);
+@import url(button.css);
+
+body {background:#f5f5f6;}
+
+::before,
+::after  {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.loginBox {width:20rem;background:#fff;position:fixed;left:calc((100% - 20rem) / 2);top:10rem;box-shadow:0 0 1pt rgba(0,0,0,.15),0 2pt 3pt rgba(0,0,0,.05);border-radius:1pt;border:1px solid #fff;}
+
+.false {margin:0 2rem;margin-top:1rem;}
+.false:before {content:"\e914";color:#F30;margin-right:.5rem;}
+.false * {display:inline;vertical-align:central;}
+
+.avatar,.getBackOfPw {cursor:default;
+-webkit-touch-callout: none; /* iOS Safari */
+-webkit-user-select: none; /* Chrome/Safari/Opera */
+-khtml-user-select: none; /* Konqueror */
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* Internet Explorer/Edge */
+user-select: none; /* Non-prefixed version, currently
+not supported by any browser */
+}
+.avatar {width:6.5rem;height:6.5rem;margin:-3.5rem auto 3rem auto;text-align:center;border:3pt solid #f7f8fa;border-radius:100%;box-shadow:0 0 1pt rgba(0,0,0,.15),0 1pt 3pt rgba(0,0,0,.15);background:#f7f8fa;}
+.avatar img {width:70%;margin:15%;}
+
+.loginList {padding:1rem;padding-top:0;}
+.loginList li {margin:1rem;}
+.loginList li p {padding-left:2rem;position:relative;}
+.loginList li p:before {position:absolute;left:0;top:0;display:block;width:2rem;height:2rem;line-height:2rem;text-align:center;vertical-align:middle;color:#717171;font-size:1.2rem;}
+.loginList li input {width:100%;}
+.loginList li.user p:before {content:"\e92e";}
+.loginList li.password p:before {content:"\e916";}
+.loginList li .inputFrame {height:2rem;border:1px solid #dededf;border-radius:.2rem;}
+.loginList li .button {text-align:center;margin-top:2rem;padding:0;}
+.loginList li .button a {padding:1rem 3rem;display:block;}
+.loginList input {height:2rem;line-height:2rem;font-size:1rem;border:0;outline:0;border-radius:.2rem;}
+.loginList li.getBackOfPw p {padding:0;margin:0;text-align:right;}
+
+.btnLooks_solid {background:#2883e9;color:rgba(255,255,255,.8);}
+
+
+/*mobi*/
+@media screen and (min-width:0) and (max-width:414px) {
+	
+.loginBox {position:static;left:auto;top:auto;width:auto;height:100vmax;}
+.avatar {margin:25vmin auto 5vmin auto;width:30vmin;height:30vmin;text-align:center;box-shadow:none;}
+
+.false {margin:0 10vmin;margin-top:5vmin;font-size:5vmin;}
+
+.loginList {padding:5vmin;}
+.loginList li {margin:5vmin;}
+.loginList li p {padding-left:15vmin;}
+.loginList li p:before {width:15vmin;height:15vmin;line-height:15vmin;font-size:6vmin;}
+.loginList li .inputFrame {height:15vmin;border:1px solid #dededf;border-radius:1vmin;}
+.loginList li .button {margin-top:8vmin;}
+.loginList li .button a {padding:5vmin 0;}
+.loginList input {height:15vmin;line-height:15vmin;font-size:5vmin;border:0;outline:0;border-radius:1vmin;}
+
+.getBackOfPw {position:fixed;bottom:0;right:0;margin:0;padding:5vmin;}
+}

@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.Tools", "GT.SiteCheck.Tools\GT.SiteCheck.Tools.csproj", "{4797AA71-EB37-4B43-8D9B-DDEDE8BD565D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.DAL", "GT.SiteCheck.DAL\GT.SiteCheck.DAL.csproj", "{4F577CC2-42EA-471C-9CED-8EBACCD5C0DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.BLL", "GT.SiteCheck.BLL\GT.SiteCheck.BLL.csproj", "{6F0F5F31-1FC3-465C-AF3C-26F8CAB03E8F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.Entity", "GT.SiteCheck.Entity\GT.SiteCheck.Entity.csproj", "{BF297991-FFEB-4505-B24D-6BC628117142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.Web", "GT.SiteCheck.Web\GT.SiteCheck.Web.csproj", "{39BE3ABB-AFCE-49A5-9088-95483533B070}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.Job", "GT.SiteCheck.Job\GT.SiteCheck.Job.csproj", "{ECC18DED-F06B-4062-86A9-862382B26C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.SiteCheck.Quartz", "GT.SiteCheck.Quartz\GT.SiteCheck.Quartz.csproj", "{2C8EF700-DB89-41D7-BA97-D4646A9DC227}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4797AA71-EB37-4B43-8D9B-DDEDE8BD565D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4797AA71-EB37-4B43-8D9B-DDEDE8BD565D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4797AA71-EB37-4B43-8D9B-DDEDE8BD565D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4797AA71-EB37-4B43-8D9B-DDEDE8BD565D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F577CC2-42EA-471C-9CED-8EBACCD5C0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F577CC2-42EA-471C-9CED-8EBACCD5C0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F577CC2-42EA-471C-9CED-8EBACCD5C0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F577CC2-42EA-471C-9CED-8EBACCD5C0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F0F5F31-1FC3-465C-AF3C-26F8CAB03E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F0F5F31-1FC3-465C-AF3C-26F8CAB03E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F0F5F31-1FC3-465C-AF3C-26F8CAB03E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F0F5F31-1FC3-465C-AF3C-26F8CAB03E8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF297991-FFEB-4505-B24D-6BC628117142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF297991-FFEB-4505-B24D-6BC628117142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF297991-FFEB-4505-B24D-6BC628117142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF297991-FFEB-4505-B24D-6BC628117142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39BE3ABB-AFCE-49A5-9088-95483533B070}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39BE3ABB-AFCE-49A5-9088-95483533B070}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39BE3ABB-AFCE-49A5-9088-95483533B070}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39BE3ABB-AFCE-49A5-9088-95483533B070}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC18DED-F06B-4062-86A9-862382B26C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC18DED-F06B-4062-86A9-862382B26C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC18DED-F06B-4062-86A9-862382B26C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC18DED-F06B-4062-86A9-862382B26C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C8EF700-DB89-41D7-BA97-D4646A9DC227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C8EF700-DB89-41D7-BA97-D4646A9DC227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C8EF700-DB89-41D7-BA97-D4646A9DC227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C8EF700-DB89-41D7-BA97-D4646A9DC227}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

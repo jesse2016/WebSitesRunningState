@@ -1,0 +1,20 @@
+/* CSS Document */
+.loadingbox {color:#333;text-align:center;}
+.loadingbox.loadingbox01 {color:#333;position:absolute;z-index:1000;left:calc((100% - 7.5rem) / 2);top:calc((100% - 3rem) / 2);}
+.loadingbox.on {display:block;}
+.loadingbox.off {display:none;}
+.loadingbox span {display:inline-block;vertical-align:middle;}
+.loadingbox .loading {width:2rem;height:2rem;position:relative;}
+.loadingbox .loadingTxt {font-size:.8rem;}
+
+.nullbox {position:relative;width:100%;min-height:20rem;text-align:center;}
+.nulllist {color:#bbb;text-align:center;}
+.nulllist.nulllist01 {position:absolute;z-index:0;left:calc((100% - 15rem) / 2);top:calc((100% - 5rem) / 2);}
+.nulllist.on {display:;}
+.nulllist.off {display:none;}
+.nulllist .titleimg {width:5rem;height:5rem;border-radius:10rem;background:#5c995c;border:.062rem solid rgba(0,0,0,.2);color:rgba(255,255,255,.4);margin:0;}
+.nulllist .titleimg:before {content:"\e918";font-size:3rem;line-height:5rem;}
+.nulllist div {width:15rem;}
+.nulllist span {display:inline-block;vertical-align:middle;text-align:center;margin:1rem;}
+.nulllist .loading {width:3rem;height:3rem;position:relative;}
+.nulllist .loadingTxt {font-size:1.5rem;}

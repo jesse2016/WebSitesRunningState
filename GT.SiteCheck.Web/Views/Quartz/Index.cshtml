@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>站点检测JOB管理</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/css/render.css">
+    <link href="~/Styles/quartz.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/layer.js"></script>
+    <script src="~/Scripts/quartz.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="title">站点检测JOB管理</div>
+        <div class="btn">
+            <ul class="tools">
+                <li><p onclick="HandleScheduler('Run')"><i>重新启动</i></p></li>
+                <li><p onclick="HandleScheduler('Pause')"><i>全部暂停</i></p></li>
+                <li><p onclick="HandleScheduler('Resume')"><i>全部开始</i></p></li>
+                @*<li><p onclick="HandleScheduler('Shutdown')"><i>全部停止</i></p></li>*@
+                @*<li><p onclick="getAllJobs()"><i>刷新列表</i></p></li>*@
+            </ul>
+        </div>
+        <div id="info"></div>
+        <div id="jobs"></div>
+    </div>
+</body>
+</html>

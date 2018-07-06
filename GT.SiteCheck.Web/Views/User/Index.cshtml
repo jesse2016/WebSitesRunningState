@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="robots" content="all" />
+
+    <link rel="stylesheet" type="text/css" href="/Content/css/login.css">
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/layer.js"></script>
+    <script src="~/Scripts/login.js"></script>
+    <title>系统登录</title>
+</head>
+
+<body>
+    <section class="loginBox">
+        <div class="avatar"><img src="/Content/img/server.svg"></div>
+        <div class="false" id="false"><p>错误信息！</p></div>
+        <ul class="loginList">
+            <li class="user"><p class="inputFrame"><input id="userName" type="text" placeholder="用户名"></p></li>
+            <li class="password"><p class="inputFrame"><input type="Password" id="Password" placeholder="密码"></p></li>
+            <li><p class="button"><a class="btnType_L btnType_capsule btnLooks_solid" id="login" onclick="login()" href="javascript:void(0);">登录</a></p></li>
+            <li class="getBackOfPw"><p><a href="javascript:void(0);">找回密码</a></p></li>
+        </ul>
+    </section>
+</body>
+</html>

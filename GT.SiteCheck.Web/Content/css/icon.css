@@ -1,0 +1,91 @@
+/* CSS Document */
+.Heading,
+.Images,
+.Video,
+.Paragraph,
+.Heading,
+.Bold,
+.Delete,
+.Image,
+.Video,
+.Delete,
+.New,
+.Empty,
+.CheckAll,
+.Paragraph,
+.Clear,
+.Edit,
+.Preview,
+.FontSize_up,
+.FontSize_down,
+.Home,
+.MoveFile {vertical-align:middle;font-size:.75rem;}
+
+.Heading *,
+.Images *,
+.Video *,
+.Paragraph *,
+.Heading *,
+.Bold *,
+.Delete *,
+.Image *,
+.Video *,
+.Delete *,
+.New *,
+.Empty *,
+.CheckAll *,
+.Paragraph *,
+.Clear *,
+.Edit *,
+.Preview *,
+.FontSize *
+.FontSize_up *,
+.FontSize_down *,
+.Home *,
+.MoveFile *  {vertical-align:middle;margin-right:.5rem;}
+
+.Heading:before,
+.Images:before,
+.Video:before,
+.Paragraph:before,
+.Heading:before,
+.Bold:before,
+.Delete:before,
+.Image:before,
+.Video:before,
+.Delete:before,
+.New:before,
+.Empty:before,
+.CheckAll:before,
+.Paragraph:before,
+.Clear:before,
+.Edit:before,
+.Preview:before,
+.FontSize:before,
+.FontSize_up:before,
+.FontSize_down:before,
+.Home:before,
+.MoveFile:before  {vertical-align:middle;color:#222;font-size:.75rem;}
+
+.Heading:before {content:"\e93c";}
+.Images:before {content:"\e93e";}
+.Video:before {content:"\e93f";}
+.Paragraph:before {content:"\e902";}
+.Heading:before {content:"\e93c";}
+.Bold:before {content:"\e93d";}
+.Delete:before {content:"\e910";}
+.Image:before {content:"\e93e";}
+.Video:before {content:"\e93f";}
+.Delete:before {content:"\e910";}
+.New:before {content:"\e93a";}
+.Empty:before {content:"\e939";}
+.CheckAll:before {content:"\e901";}
+.Paragraph:before {content:"\e902";}
+.Clear:before {content:"\e904";}
+.Edit:before {content:"\e920";}
+.Preview:before {content:"\e900";}
+.FontSize:before {content:"\e907";}
+.FontSize_up:before {content:"\e903";}
+.FontSize_down:before {content:"\e905";}
+.Home:before {content:"\e913";}
+.MoveFile:before {content:"\e908";}

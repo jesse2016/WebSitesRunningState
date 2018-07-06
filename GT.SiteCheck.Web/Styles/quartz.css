@@ -1,0 +1,24 @@
+﻿.main {
+    margin: 0 auto; width: 100%; margin-top: 20px; margin-bottom: 20px;
+}
+.title {
+    margin: 0 auto; text-align:center; width: 90%; font-size: 22px; font-weight: 600;
+}
+.btn, #jobs {
+    margin: 0 auto; text-align:center; width: 90%;
+}
+table,table tr th, table tr td { border:1px solid #0094ff; }
+table { width: 980px; min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;}
+        
+.btn .tools {
+    margin: 10px; 
+}
+#info {
+    margin: 0 auto; text-align:left; width: 90%; padding-bottom: 10px;
+}
+#info span {
+    margin-right: 10px;
+}
+#info i{
+    font-weight: 600;
+}

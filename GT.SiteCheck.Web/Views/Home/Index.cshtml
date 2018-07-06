@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, height=device-height" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta name="robots" content="all" />
+
+    <link rel="stylesheet" type="text/css" href="~/Content/css/render.css">
+    <script src="~/Content/js/menufold.js" type="text/javascript" language="javascript"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/home.js" type="text/javascript"></script>
+    <title>服务器状态监控系统</title>
+</head>
+
+<body>
+    <section class="header">
+        <em><img src="~/Content/img/server.svg"></em>
+        <h1><a href="/Home"><span>服务器状态监控系统</span></a></h1>
+        <div class="logout">
+            <span><i>@ViewData["userName"]</i></span>
+            <a href="/User/Logout" class="btnType_capsule btnType_M btnLooks_hollow">退出</a>
+        </div>
+    </section>
+    <section class="cmsbody">
+        <div class="menubar" id="menu"><hr></div>
+        <div class="contentbox">
+            <iframe src="" id="frame" style="width:100%;height:100%;" frameborder="0"></iframe>
+        </div>
+    </section>
+    <section class="foot">
+        <p>
+            Copyright &copy; SpeedWork All Rights Reserved.
+        </p>
+    </section>
+</body>
+</html>

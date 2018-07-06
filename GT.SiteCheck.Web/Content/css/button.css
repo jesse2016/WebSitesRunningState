@@ -1,0 +1,100 @@
+/* CSS Document */
+
+/*Button Type*/
+
+.btnType_capsule,
+.btnType_roundedCorner {text-decoration:none;display:inline-block;text-align:center;-webkit-tap-highlight-color:rgba(253,208,0,.5);line-height:1;}
+
+.btnType_capsule {border-radius:10rem;}
+.btnType_roundedCorner {border-radius:.5rem;}
+
+.btnType_L {padding:.625rem 1.25rem;font-size:1.3rem;}
+.btnType_M {padding:.5rem 1rem;font-size:1rem;}
+.btnType_S {padding:.375rem .75rem;font-size:.75rem;}
+.btnType_roundedCorner.btnType_L {border-radius:.5rem;}
+.btnType_roundedCorner.btnType_M {border-radius:.4rem;}
+.btnType_roundedCorner.btnType_S {border-radius:.3rem;}
+
+/*Button Looks*/
+.btnLooks_solid {background:#222229;color:#ddddde;}
+.btnLooks_hollow {border:.5pt solid #222229;color:#222229;}
+
+.btnLooks_solid:hover {color:#fff;}
+.btnLooks_hollow:hover {color:#222229;background:#f5f5f6;}
+
+.btnLooks_shadow  {box-shadow:0 0 .1rem rgba(0,0,0,.3),0 .2rem .5rem rgba(0,0,0,.15);}
+
+.btnLooks_gradient  {color:#fff;
+background:-webkit-linear-gradient(#00b2ff,#007aff); /* Safari 5.1 - 6.0 */
+background:-o-linear-gradient(#00b2ff,#007aff); /* Opera 11.1 - 12.0 */
+background:-moz-linear-gradient(#00b2ff,#007aff); /* Firefox 3.6 - 15 */
+background:linear-gradient(#00b2ff,#007aff); /* 标准的语法 */
+transition:background 1s;transition-timing-function:cubic-bezier(.25,0,.75,1);}
+.btnLooks_gradient:hover {color:#fff;
+background:-webkit-linear-gradient(#414141,#949494); /* Safari 5.1 - 6.0 */
+background:-o-linear-gradient(#414141,#949494); /* Opera 11.1 - 12.0 */
+background:-moz-linear-gradient(#414141,#949494); /* Firefox 3.6 - 15 */
+background:linear-gradient(#414141,#949494); /* 标准的语法 */}
+
+.btnLooks_gradient_gray  {cursor:default;color:#bbc;
+background:-webkit-linear-gradient(#dededf,#efefef); /* Safari 5.1 - 6.0 */
+background:-o-linear-gradient(#dededf,#efefef); /* Opera 11.1 - 12.0 */
+background:-moz-linear-gradient(#dededf,#efefef); /* Firefox 3.6 - 15 */
+background:linear-gradient(#dededf,#efefef); /* 标准的语法 */}
+.btnLooks_gradient_gray:hover {color:#bbc;}
+
+/*Button Container*/
+.btnBox {text-align:center;position:relative;}
+
+.btn_in2 {font-size:0;padding:0;margin:.5rem;border:0;}
+.btn_in2 .item {display:inline-block;width:50%;padding:0;margin:0;border:0;}
+.btn_in2 .item .itemin {padding:0;margin:.5rem;border:0;}
+
+/*mobi*/
+@media screen and (min-width:0) and (max-width:414px) {
+	
+/*Button Type*/
+
+.btnType_capsule,
+.btnType_roundedCorner {display:block;}
+
+.btnType_capsule {border-radius:100vmin;}
+.btnType_roundedCorner {border-radius:3.7vmin;}
+
+.btnType_L {padding:4vmin 0;font-size:6vmin;}
+.btnType_M {padding:3vmin 0;font-size:5vmin;}
+.btnType_S {padding:2vmin 0;font-size:4vmin;}
+.btnType_roundedCorner.btnType_L {border-radius:4vmin;}
+.btnType_roundedCorner.btnType_M {border-radius:3vmin;}
+.btnType_roundedCorner.btnType_S {border-radius:2vmin;}
+
+/*Button Looks*/
+.btnLooks_solid {}
+.btnLooks_hollow {}
+
+.btnLooks_solid:hover {}
+.btnLooks_hollow:hover {}
+
+.btnLooks_gradient  {}
+
+.btnLooks_shadow  {}
+
+.btnLooks_gradient_gray  {}	
+	
+/*Button Container*/
+.btn_in2 {padding:0;border:0;margin:4.2vmin;}
+.btn_in2 .item .itemin {padding:0;border:0;margin:4.2vmin;}
+
+}
+/*iP5*/
+@media screen and (min-width:0) and (max-width:320px) {
+	
+}
+/*iP6*/
+@media screen and (min-width:321px) and (max-width:375px) {
+	
+}
+/*6P*/
+@media screen and (min-width:376px) and (max-width:414px) {
+	
+}
